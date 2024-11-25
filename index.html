@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Application</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Client Application</h1>
+        <div class="menu">
+            <button onclick="fetchPersonnel()">Get Personnel</button>
+            <button onclick="fetchSanitaryReadings()">Get Sanitary Readings</button>
+            <button onclick="fetchArticles()">Get Articles</button>
+            <button onclick="createArticle()">Create Article</button>
+        </div>
+
+        <div id="result">
+            <h2>Results</h2>
+            <pre id="response"></pre>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
