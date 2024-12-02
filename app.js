@@ -1,5 +1,7 @@
 const API_URL = "http://localhost:8000";  // Update this if the backend URL is different
 
+//const API_URL = "http://localhost:8000";  // Update this if the backend URL is different
+
 // Fetch all personnel
 async function fetchPersonnel() {
     try {
