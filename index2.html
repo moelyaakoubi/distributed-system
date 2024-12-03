@@ -13,18 +13,24 @@
 
     <main class="container">
         <!-- Commercial -->
-        <div class="card">
+        <div class="card-commercial">
             <h3>Commercial</h3>
-            <div class="value">Article A123</div>
-            <div class="description">Article ayant subi le moins de collisions</div>
+            <div class="value"></div>
+            <div class="description"></div>
         </div>
 
         <!-- Ressources humaines -->
-        <div class="card">
+        <div class="card-rh">
             <h3>Ressources humaines</h3>
-            <div class="value">95%</div>
-            <div class="description">Formation RH avec le plus haut pourcentage de motivation</div>
+            <div class="value"></div>
+            <div class="description"></div>
         </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetchHighestMotivationFormation();
+                articleAyantMinCollision();
+            });
+        </script>
 
         <!-- Assistance commerciale -->
         <div class="card">
@@ -61,5 +67,6 @@
             <div class="description">Nombre maximum de collisions pour articles avec emballage</div>
         </div>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
