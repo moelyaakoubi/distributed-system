@@ -158,7 +158,7 @@ async def all():
     return rows
 
 @app.get("/relevessanitaires/max_temp")
-async def all():
+async def max_temp():
     connection = get_db_connection()
     cursor = connection.cursor(dictionary=True)
     cursor.execute('SELECT Zone, max(TemperatureAir) as max_temp FROM relevessanitaires')

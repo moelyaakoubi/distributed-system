@@ -178,7 +178,7 @@ async function articleAyantMinCollision() {
 
 function displayArticleAyantMinCollisionCardResult(data) {
     const cardElement = document.querySelector(".card-commercial .value");
-    cardElement.innerHTML = `${data.IdentifiantProduit}`;
+    cardElement.innerHTML = `Article: ${data.IdentifiantProduit}`;
     const descriptionElement = document.querySelector(".card-commercial .description");
-    descriptionElement.innerHTML = `${data.Collisions}`;
+    descriptionElement.innerHTML = `Collisions: ${data.Collisions}`;
 }
