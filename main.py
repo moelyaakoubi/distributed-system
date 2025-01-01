@@ -29,9 +29,11 @@ app.add_middleware(
 def get_db_connection():
     connection = mysql.connector.connect(
         host='localhost',
-        user='user',#root
-        password='user',
-        database='projet_application_repartie'
+        user='root',
+        password='',
+        database='projet_application_repartie',
+        port=3308
+
     )
     return connection
 
